@@ -1,5 +1,24 @@
 # 안진홍 602377109
 
+## [ 04월 13일 학습내용 ]
+>오늘 배운 내용 정리
+
+read.table() : 텍스트 파일을 불러오고, 데이터 프레임 형식으로 저장 
+
+### TXT 파일 가져오기
+        ex_data <- read.table(“C:/Rstudy/data_ex.txt”, encoding = “EUC-KR”, fileEncoding = “UTF-8”)
+        View(ex_data)
+        
+### CSV 파일 가져오기
+
+        ex_data <-read.csv(“C:/Rstudy/data_ex.csv”)
+        View(ex_data)
+        
+### 엑셀 파일 가져오기
+
+        excel_data_ex <- read_excel("C:/Rstudy/data_ex.xlsx")
+        View(excel_data_ex)
+
 ## [ 03월 30일 학습내용 ]
 >오늘 배운 내용 정리
 
