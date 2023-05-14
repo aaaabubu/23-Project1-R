@@ -1,5 +1,35 @@
 # 안진홍 602377109
 
+## [ 05월 11일 학습내용 ]
+>오늘 배운 내용 정리
+
+### 겉측값 확인
+
+        C1=c(1,2,NA,NA,5)
+        C2=(1,2,3,4,5)
+        C3=(NA,2,3,4,5)
+        md=data.frame(C1,C2,C3)
+
+        > is.na(md)
+        C1    C2    C3
+        [1,] FALSE FALSE  TRUE
+        [2,] FALSE FALSE FALSE
+        [3,]  TRUE FALSE FALSE
+        [4,]  TRUE FALSE FALSE
+        [5,] FALSE FALSE FALSE
+   
+### NA 제거
+
+        C1=c(1,2,NA,NA,5)
+        C2=(1,2,3,4,5)
+        C3=(NA,2,3,4,5)
+        md=data.frame(C1,C2,C3)
+        
+        > na.omit(md)
+        C1 C2 C3
+        2  2  2  2
+        5  5  5  5
+
 ## [ 05월 04일 학습내용 ]
 >오늘 배운 내용 정리
 
