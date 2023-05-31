@@ -1,5 +1,24 @@
 # 안진홍 602377109
 
+## [ 05월 25일 학습내용 ]
+>오늘 배운 내용 정리
+
+### 방사형 차트
+방사형 차트(Radar Chart)는 어떤 측정 목표에 대한 평가항목이 여러 개일 때 항목 수에 따라 원을 같은 간격으로 나누고, 중심으로부터 일정 간격으로 동심으로 척도를 재는 칸을 나누어 각 평가항목의 정량화된 점수에 따라 그 위치에 점을 찍고 평가항목간 점을 이어 선으로 만들어 항목 간 균형을 한눈에 볼 수 있도록 해주는 차트입니다. 여러 측정 목표를 함께 겹쳐 놓아 비교하기에 편리하고 각 항목 간 비율뿐만 아니라 균형과 경향을 직관적으로 알 수 있어 편리함을 제공해주는 차트.
+
+### 데이터 만들기
+
+        > set.seed(99)
+        > data <- as.data.frame(matrix( sample( 0:20 , 15 , replace=F) , ncol=5))
+        > colnames(data) <- c("math" , "english" , "biology" , "music" , "R-coding" )
+        > rownames(data) <- paste("mister" , letters[1:3] , sep="-")
+        > data
+         math english biology music R-coding
+        mister-a   12      17      10    19        1
+        mister-b    2       9       4     6       16
+        mister-c   13      15      18     5       20
+
+
 ## [ 05월 18일 학습내용 ]
 >오늘 배운 내용 정리
 
